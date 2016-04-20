@@ -1,4 +1,4 @@
-package com.adityarathi.muo.customViews;
+package com.adityarathi.muo.ui.customViews;
 
 /**
  * Created by Sumeet on 18-Apr-16.

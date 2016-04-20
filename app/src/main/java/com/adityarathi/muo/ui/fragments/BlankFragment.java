@@ -1,4 +1,4 @@
-package com.adityarathi.muo.fragments;
+package com.adityarathi.muo.ui.fragments;
 
 import android.content.Context;
 import android.net.Uri;
