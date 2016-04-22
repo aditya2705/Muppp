@@ -41,4 +41,5 @@ dependencies {
     }
     compile 'com.mikepenz:fontawesome-typeface:4.4.0.1@aar'
     compile 'jp.wasabeef:recyclerview-animators:2.2.1'
+    debugCompile 'im.dino:dbinspector:3.0.0@aar'
 }
