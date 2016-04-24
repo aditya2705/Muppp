@@ -53,60 +53,18 @@ public class MainActivity extends AppCompatActivity {
         mContext = this;
 
         mApp = (Common) mContext.getApplicationContext();
-        loaded = mApp.getSharedPreferences().getBoolean("LOADED_DATA",false);
-
-
-        dbAccessHelper = new DBAccessHelper(this);
 
         //setup Recycler View
         recyclerView.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
-        if(!loaded) {
-
-            AsyncBuildLibraryTask task = new AsyncBuildLibraryTask(mContext.getApplicationContext());
-
-            AsyncBuildLibraryTask.OnBuildLibraryProgressUpdate buildLibraryProgressUpdate = new AsyncBuildLibraryTask.OnBuildLibraryProgressUpdate() {
-                @Override
-                public void onStartBuildingLibrary() {
-                    progressDialog = new ProgressDialog(MainActivity.this);
-                    progressDialog.setTitle("Loading...");
-                    progressDialog.show();
-                }
-
-                @Override
-                public void onProgressUpdate(AsyncBuildLibraryTask task, String mCurrentTask, int overallProgress, int maxProgress, boolean mediaStoreTransferDone) {
-
-                    //This fragment only shows the MediaStore transfer progress.
-                    if (mediaStoreTransferDone)
-                        onFinishBuildingLibrary(task);
-
-                }
-
-                @Override
-                public void onFinishBuildingLibrary(AsyncBuildLibraryTask task) {
-
-                    mApp.getSharedPreferences().edit().putBoolean("LOADED_DATA", true).commit();
-                    progressDialog.dismiss();
-                    getSongList();
-
-                }
-            };
-
-            task.setOnBuildLibraryProgressUpdate(buildLibraryProgressUpdate);
-            task.execute();
-
-        }else{
-
-            getSongList();
-
-        }
+        getSongList();
 
 
     }
 
     private void getSongList() {
 
-        Cursor musicCursor = dbAccessHelper.getAllSongs();
+        Cursor musicCursor = mApp.getDBAccessHelper().getAllSongs();
 
 
         if(musicCursor!=null && musicCursor.moveToFirst()){

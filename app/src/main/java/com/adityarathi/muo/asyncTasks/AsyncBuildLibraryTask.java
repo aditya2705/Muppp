@@ -31,6 +31,7 @@ import android.widget.Toast;
 import com.adityarathi.muo.R;
 import com.adityarathi.muo.dbHelper.DBAccessHelper;
 import com.adityarathi.muo.dbHelper.MediaStoreAccessHelper;
+import com.adityarathi.muo.services.BuildMusicLibraryService;
 import com.adityarathi.muo.utils.Common;
 import com.adityarathi.muo.utils.FileExtensionFilter;
 
@@ -40,10 +41,16 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.HashMap;
 
+/**
+ * The Mother of all AsyncTasks in this app.
+ *
+ * @author Saravan Pantham
+ */
 public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
 
 	private Context mContext;
 	private Common mApp;
+    private BuildMusicLibraryService mService;
 	public ArrayList<OnBuildLibraryProgressUpdate> mBuildLibraryProgressUpdate;
 	
 	private String mCurrentTask = "";
@@ -62,9 +69,10 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
 	private PowerManager pm;
 	private PowerManager.WakeLock wakeLock;
 
-	public AsyncBuildLibraryTask(Context context) {
+	public AsyncBuildLibraryTask(Context context, BuildMusicLibraryService service) {
 		mContext = context;
 		mApp = (Common) mContext;
+        mService = service;
         mBuildLibraryProgressUpdate = new ArrayList<OnBuildLibraryProgressUpdate>();
 	}
 	
@@ -112,7 +120,7 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
 		// Acquire a wakelock to prevent the CPU from sleeping while the process is running.
 		pm = (PowerManager) mContext.getSystemService(Context.POWER_SERVICE);
 		wakeLock = pm.newWakeLock(PowerManager.PARTIAL_WAKE_LOCK,
-								  "com.adityarathi.muo.asyncTasks.AsyncBuildLibraryTask");
+								  "com.aniruddhc.acemusic.player.AsyncTasks.AsyncBuildLibraryTask");
 		wakeLock.acquire();
 
 	}
@@ -130,7 +138,7 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
 		
 		/* 
 		 * Transfer the content in mediaStoreCursor over to 
-		 * Muo' private database.
+		 * Jams' private database.
 		 */
 		if (mediaStoreCursor!=null) {
 			saveMediaStoreDataToDB(mediaStoreCursor);
@@ -195,7 +203,7 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
 	
 	/**
 	 * Iterates through mediaStoreCursor and transfers its data 
-	 * over to Muo' private database.
+	 * over to Jams' private database.
 	 */
 	private void saveMediaStoreDataToDB(Cursor mediaStoreCursor) {
 		try {
@@ -205,7 +213,7 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
     		//Clear out the table.
     		mApp.getDBAccessHelper()
     			.getWritableDatabase()
-    			.delete(DBAccessHelper.MUSIC_LIBRARY_TABLE,
+    			.delete(DBAccessHelper.MUSIC_LIBRARY_TABLE, 
     					null, 
     					null);
     		
@@ -251,7 +259,7 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
     			albumArtistColIndex = artistColIndex;
     		}
     		
-    		//Iterate through MediaStore's cursor and save the fields to Muo' DB.
+    		//Iterate through MediaStore's cursor and save the fields to Jams' DB.
             for (int i=0; i < mediaStoreCursor.getCount(); i++) {
             	
             	mediaStoreCursor.moveToPosition(i);
@@ -712,7 +720,7 @@ public class AsyncBuildLibraryTask extends AsyncTask<String, String, Void> {
 				return mFolderArtHashMap.get(directoryPath);
 			
 			//Get a list of images in the album's folder.
-			FileExtensionFilter IMAGES_FILTER = new FileExtensionFilter(new String[] {".jpg", ".jpeg", 
+			FileExtensionFilter IMAGES_FILTER = new FileExtensionFilter(new String[] {".jpg", ".jpeg",
 																					  ".png", ".gif"});
 			File[] folderList = directoryFile.listFiles(IMAGES_FILTER);
 			
