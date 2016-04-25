@@ -182,7 +182,7 @@ public class Common extends Application {
 		mContext = getApplicationContext();
 
 		//SharedPreferences.
-		mSharedPreferences = this.getSharedPreferences("com.adityrathi.muo", Context.MODE_PRIVATE);
+		mSharedPreferences = this.getSharedPreferences("com.adityarathi.muo", Context.MODE_PRIVATE);
 
 		//Init the database.
 		mDBAccessHelper = new DBAccessHelper(mContext);

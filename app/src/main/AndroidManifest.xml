@@ -25,9 +25,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.activities.MainActivity">
 
-        </activity>
+        <activity android:name=".ui.activities.MainActivity"
+            android:theme="@style/CustomDrawerTheme"/>
 
         <service
             android:name=".services.BuildMusicLibraryService"

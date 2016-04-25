@@ -24,12 +24,9 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.adityarathi.muo.R;
-
-
 /**
  * SQLite database implementation. Note that this class 
- * only contains methods that access Jams' private 
+ * only contains methods that access Muo's private 
  * database. For methods that access Android's 
  * MediaStore database, see MediaStoreAccessHelper.
  *
