@@ -3,7 +3,7 @@
     android:id="@+id/toolbar"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_48sdp"
-    android:background="@color/appThemeColor"
+    android:background="@drawable/gradient_1"
     android:minHeight="@dimen/_48sdp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
 

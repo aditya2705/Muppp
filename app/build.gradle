@@ -20,7 +20,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     testCompile 'junit:junit:4.12'
     compile('com.mikepenz:materialdrawer:5.2.0@aar') {
         transitive = true
@@ -41,5 +41,7 @@ dependencies {
     compile 'com.github.rey5137:material:1.2.2'
     compile 'de.hdodenhof:circleimageview:2.0.0'
     compile 'com.mikepenz:fontawesome-typeface:4.4.0.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.0@aar'
     compile 'jp.wasabeef:recyclerview-animators:2.2.1'
+    compile project(':smarttablayout')
 }

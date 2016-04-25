@@ -325,9 +325,9 @@
 
     <color name="white_semi_transparent">#22ffffff</color>
 
-    <color name="appThemeColor">#2e86b9</color>
-    <color name="appThemeColorDark">#23678e</color>
-    <color name="appThemeColorLight">#3394cc</color>
+    <color name="appThemeColor">#3e3e3e</color>
+    <color name="appThemeColorDark">#2b2b2b</color>
+    <color name="appThemeColorLight">#878787</color>
 
 
 </resources>
