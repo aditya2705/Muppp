@@ -1,70 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:gravity="bottom"
+    sothree:umanoParallaxOffset="@dimen/_100sdp"
+    sothree:umanoPanelHeight="@dimen/_50sdp"
+    sothree:umanoShadowHeight="@dimen/_10sdp"
+    sothree:umanoDragView="@+id/bottom_panel_layout">
 
-    <android.support.design.widget.AppBarLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
-        app:elevation="0dp"
-        android:background="@color/md_white_1000">
-
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/collapse_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_90sdp"
-            android:fitsSystemWindows="true"
-            app:contentScrim="@color/appThemeColorDark"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlways">
-
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_48sdp"
-                android:background="@drawable/gradient_1"
-                android:minHeight="@dimen/_48sdp"
-                app:layout_collapseMode="none"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
-
-            <com.ogaclejapan.smarttablayout.SmartTabLayout
-                android:id="@+id/type_tabs"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_42sdp"
-                android:background="@drawable/gradient_2"
-                app:stl_defaultTabTextColor="#ffffff"
-                app:stl_titleOffset="auto_center"
-                app:stl_distributeEvenly="false"
-                app:stl_indicatorWithoutPadding="false"
-                app:stl_indicatorAlwaysInCenter="false"
-                app:stl_dividerThickness="0dp"
-                app:stl_defaultTabTextMinWidth="@dimen/_77sdp"
-                app:stl_defaultTabTextSize="@dimen/_11sdp"
-                app:stl_indicatorColor="#ff5252"
-                app:stl_indicatorCornerRadius="0dp"
-                app:stl_indicatorInterpolation="smart"
-                app:stl_indicatorThickness="@dimen/_3sdp"
-                app:stl_indicatorGravity="bottom"
-                app:stl_underlineColor="@android:color/transparent"
-                android:paddingBottom="@dimen/_6sdp"
-                android:layout_gravity="bottom"
-                />
-
-        </android.support.design.widget.CollapsingToolbarLayout>
-
-    </android.support.design.widget.AppBarLayout>
-
-    <com.adityarathi.muo.ui.customViews.SmartViewPager
-        android:id="@+id/viewpager"
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        android:background="@color/md_white_1000">
 
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_3sdp"
-        android:background="@drawable/shadow_top_to_bottom"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:elevation="0dp"
+            android:background="@color/md_white_1000">
 
-</android.support.design.widget.CoordinatorLayout>
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapse_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_90sdp"
+                android:fitsSystemWindows="true"
+                app:contentScrim="@color/appThemeColorDark"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap|enterAlways">
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_48sdp"
+                    android:background="@drawable/gradient_1"
+                    android:minHeight="@dimen/_48sdp"
+                    app:layout_collapseMode="none"
+                    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+                <com.ogaclejapan.smarttablayout.SmartTabLayout
+                    android:id="@+id/type_tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_42sdp"
+                    android:background="@drawable/gradient_2"
+                    app:stl_defaultTabTextColor="#ffffff"
+                    app:stl_titleOffset="auto_center"
+                    app:stl_distributeEvenly="false"
+                    app:stl_indicatorWithoutPadding="false"
+                    app:stl_indicatorAlwaysInCenter="false"
+                    app:stl_dividerThickness="0dp"
+                    app:stl_defaultTabTextMinWidth="@dimen/_77sdp"
+                    app:stl_defaultTabTextSize="@dimen/_11sdp"
+                    app:stl_indicatorColor="#ff5252"
+                    app:stl_indicatorCornerRadius="0dp"
+                    app:stl_indicatorInterpolation="smart"
+                    app:stl_indicatorThickness="@dimen/_3sdp"
+                    app:stl_indicatorGravity="bottom"
+                    app:stl_underlineColor="@android:color/transparent"
+                    android:layout_gravity="bottom"
+                    />
+
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.adityarathi.muo.ui.customViews.SmartViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_3sdp"
+            android:background="@drawable/shadow_top_to_bottom"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/bottom_panel_layout"
+        layout="@layout/music_bottom_panel_layout" />
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

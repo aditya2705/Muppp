@@ -1,1 +1,1 @@
-include ':app', ':smarttablayout'
+include ':app', ':smarttablayout', ':slidinguppanel'

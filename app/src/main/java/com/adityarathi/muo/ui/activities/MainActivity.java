@@ -2,6 +2,7 @@ package com.adityarathi.muo.ui.activities;
 
 import android.content.Context;
 import android.support.design.widget.CollapsingToolbarLayout;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -11,6 +12,7 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Toast;
 
 import com.adityarathi.muo.R;
 import com.adityarathi.muo.ui.customViews.SmartViewPager;
@@ -33,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     @Bind(R.id.viewpager) SmartViewPager viewPager;
     @Bind(R.id.type_tabs) SmartTabLayout tabs;
     @Bind(R.id.collapse_toolbar) CollapsingToolbarLayout collapsingToolbarLayout;
+    @Bind(R.id.play_button) FloatingActionButton playButton;
 
     public Context mContext;
     private Common mApp;
@@ -103,6 +106,12 @@ public class MainActivity extends AppCompatActivity {
         tabs.setViewPager(viewPager);
         viewPager.setCurrentItem(0);
 
+        playButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this,"Play",Toast.LENGTH_SHORT).show();
+            }
+        });
 
     }
 

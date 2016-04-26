@@ -112,67 +112,67 @@ public class Common extends Application {
 	public static final int GENRES_FLIPPED_FRAGMENT = 12;
 	public static final int GENRES_FLIPPED_SONGS_FRAGMENT = 13;
 
-    //Constants for identifying playback routes.
-    public static final int PLAY_ALL_SONGS = 0;
-    public static final int PLAY_ALL_BY_ARTIST = 1;
-    public static final int PLAY_ALL_BY_ALBUM_ARTIST = 2;
-    public static final int PLAY_ALL_BY_ALBUM = 3;
-    public static final int PLAY_ALL_IN_PLAYLIST = 4;
-    public static final int PLAY_ALL_IN_GENRE = 5;
-    public static final int PLAY_ALL_IN_FOLDER = 6;
+	//Constants for identifying playback routes.
+	public static final int PLAY_ALL_SONGS = 0;
+	public static final int PLAY_ALL_BY_ARTIST = 1;
+	public static final int PLAY_ALL_BY_ALBUM_ARTIST = 2;
+	public static final int PLAY_ALL_BY_ALBUM = 3;
+	public static final int PLAY_ALL_IN_PLAYLIST = 4;
+	public static final int PLAY_ALL_IN_GENRE = 5;
+	public static final int PLAY_ALL_IN_FOLDER = 6;
 
 	//Device orientation constants.
 	public static final int ORIENTATION_PORTRAIT = 0;
 	public static final int ORIENTATION_LANDSCAPE = 1;
 
-    //Device screen size/orientation identifiers.
-    public static final String REGULAR = "regular";
-    public static final String SMALL_TABLET = "small_tablet";
-    public static final String LARGE_TABLET = "large_tablet";
-    public static final String XLARGE_TABLET = "xlarge_tablet";
-    public static final int REGULAR_SCREEN_PORTRAIT = 0;
-    public static final int REGULAR_SCREEN_LANDSCAPE = 1;
-    public static final int SMALL_TABLET_PORTRAIT = 2;
-    public static final int SMALL_TABLET_LANDSCAPE = 3;
-    public static final int LARGE_TABLET_PORTRAIT = 4;
-    public static final int LARGE_TABLET_LANDSCAPE = 5;
-    public static final int XLARGE_TABLET_PORTRAIT = 6;
-    public static final int XLARGE_TABLET_LANDSCAPE = 7;
+	//Device screen size/orientation identifiers.
+	public static final String REGULAR = "regular";
+	public static final String SMALL_TABLET = "small_tablet";
+	public static final String LARGE_TABLET = "large_tablet";
+	public static final String XLARGE_TABLET = "xlarge_tablet";
+	public static final int REGULAR_SCREEN_PORTRAIT = 0;
+	public static final int REGULAR_SCREEN_LANDSCAPE = 1;
+	public static final int SMALL_TABLET_PORTRAIT = 2;
+	public static final int SMALL_TABLET_LANDSCAPE = 3;
+	public static final int LARGE_TABLET_PORTRAIT = 4;
+	public static final int LARGE_TABLET_LANDSCAPE = 5;
+	public static final int XLARGE_TABLET_PORTRAIT = 6;
+	public static final int XLARGE_TABLET_LANDSCAPE = 7;
 
-    //Miscellaneous flags/identifiers.
-    public static final String SONG_ID = "SongId";
-    public static final String SONG_TITLE = "SongTitle";
-    public static final String SONG_ALBUM = "SongAlbum";
-    public static final String SONG_ARTIST = "SongArtist";
-    public static final String ALBUM_ART = "AlbumArt";
-    public static final String CURRENT_THEME = "CurrentTheme";
-    public static final int DARK_THEME = 0;
-    public static final int LIGHT_THEME = 1;
+	//Miscellaneous flags/identifiers.
+	public static final String SONG_ID = "SongId";
+	public static final String SONG_TITLE = "SongTitle";
+	public static final String SONG_ALBUM = "SongAlbum";
+	public static final String SONG_ARTIST = "SongArtist";
+	public static final String ALBUM_ART = "AlbumArt";
+	public static final String CURRENT_THEME = "CurrentTheme";
+	public static final int DARK_THEME = 0;
+	public static final int LIGHT_THEME = 1;
 
-    //SharedPreferences keys.
-    public static final String CROSSFADE_ENABLED = "CrossfadeEnabled";
-    public static final String CROSSFADE_DURATION = "CrossfadeDuration";
-    public static final String REPEAT_MODE = "RepeatMode";
-    public static final String MUSIC_PLAYING = "MusicPlaying";
-    public static final String SERVICE_RUNNING = "ServiceRunning";
-    public static final String CURRENT_LIBRARY = "CurrentLibrary";
-    public static final String CURRENT_LIBRARY_POSITION = "CurrentLibraryPosition";
-    public static final String SHUFFLE_ON = "ShuffleOn";
-    public static final String FIRST_RUN = "FirstRun";
-    public static final String STARTUP_BROWSER = "StartupBrowser";
-    public static final String SHOW_LOCKSCREEN_CONTROLS = "ShowLockscreenControls";
-    public static final String ARTISTS_LAYOUT = "ArtistsLayout";
-    public static final String ALBUM_ARTISTS_LAYOUT = "AlbumArtistsLayout";
-    public static final String ALBUMS_LAYOUT = "AlbumsLayout";
-    public static final String PLAYLISTS_LAYOUT = "PlaylistsLayout";
-    public static final String GENRES_LAYOUT = "GenresLayout";
-    public static final String FOLDERS_LAYOUT = "FoldersLayout";
+	//SharedPreferences keys.
+	public static final String CROSSFADE_ENABLED = "CrossfadeEnabled";
+	public static final String CROSSFADE_DURATION = "CrossfadeDuration";
+	public static final String REPEAT_MODE = "RepeatMode";
+	public static final String MUSIC_PLAYING = "MusicPlaying";
+	public static final String SERVICE_RUNNING = "ServiceRunning";
+	public static final String CURRENT_LIBRARY = "CurrentLibrary";
+	public static final String CURRENT_LIBRARY_POSITION = "CurrentLibraryPosition";
+	public static final String SHUFFLE_ON = "ShuffleOn";
+	public static final String FIRST_RUN = "FirstRun";
+	public static final String STARTUP_BROWSER = "StartupBrowser";
+	public static final String SHOW_LOCKSCREEN_CONTROLS = "ShowLockscreenControls";
+	public static final String ARTISTS_LAYOUT = "ArtistsLayout";
+	public static final String ALBUM_ARTISTS_LAYOUT = "AlbumArtistsLayout";
+	public static final String ALBUMS_LAYOUT = "AlbumsLayout";
+	public static final String PLAYLISTS_LAYOUT = "PlaylistsLayout";
+	public static final String GENRES_LAYOUT = "GenresLayout";
+	public static final String FOLDERS_LAYOUT = "FoldersLayout";
 
-    //Repeat mode constants.
-    public static final int REPEAT_OFF = 0;
-    public static final int REPEAT_PLAYLIST = 1;
-    public static final int REPEAT_SONG = 2;
-    public static final int A_B_REPEAT = 3;
+	//Repeat mode constants.
+	public static final int REPEAT_OFF = 0;
+	public static final int REPEAT_PLAYLIST = 1;
+	public static final int REPEAT_SONG = 2;
+	public static final int A_B_REPEAT = 3;
 
 	@Override
 	public void onCreate() {
@@ -191,24 +191,24 @@ public class Common extends Application {
 	}
 
 
- 	/**
+	/**
 	 * Used to downsample a bitmap that's been downloaded from the internet.
 	 */
 	public Bitmap getDownsampledBitmap(Context ctx, URL url, int targetWidth, int targetHeight) {
-        Bitmap bitmap = null;
-        try {
-            BitmapFactory.Options outDimens = getBitmapDimensions(url);
+		Bitmap bitmap = null;
+		try {
+			BitmapFactory.Options outDimens = getBitmapDimensions(url);
 
-            int sampleSize = calculateSampleSize(outDimens.outWidth, outDimens.outHeight, targetWidth, targetHeight);
+			int sampleSize = calculateSampleSize(outDimens.outWidth, outDimens.outHeight, targetWidth, targetHeight);
 
-            bitmap = downsampleBitmap(url, sampleSize);
+			bitmap = downsampleBitmap(url, sampleSize);
 
-        } catch (Exception e) {
-            //handle the exception(s)
-        }
+		} catch (Exception e) {
+			//handle the exception(s)
+		}
 
-        return bitmap;
-    }
+		return bitmap;
+	}
 
 	/**
 	 * Retrieves the image dimensions of the input file.
@@ -218,343 +218,343 @@ public class Common extends Application {
 	 * @throws FileNotFoundException
 	 * @throws IOException
 	 */
-    public BitmapFactory.Options getBitmapDimensions(URL url) throws FileNotFoundException, IOException {
-        BitmapFactory.Options outDimens = new BitmapFactory.Options();
-        outDimens.inJustDecodeBounds = true; // the decoder will return null (no bitmap)
+	public BitmapFactory.Options getBitmapDimensions(URL url) throws FileNotFoundException, IOException {
+		BitmapFactory.Options outDimens = new BitmapFactory.Options();
+		outDimens.inJustDecodeBounds = true; // the decoder will return null (no bitmap)
 
-        InputStream is = url.openStream();
-        // if Options requested only the size will be returned
-        BitmapFactory.decodeStream(is, null, outDimens);
-        is.close();
+		InputStream is = url.openStream();
+		// if Options requested only the size will be returned
+		BitmapFactory.decodeStream(is, null, outDimens);
+		is.close();
 
-        return outDimens;
-    }
+		return outDimens;
+	}
 
-    /**
-     * Resamples a resource image to avoid OOM errors.
-     *
-     * @param resID Resource ID of the image to be downsampled.
-     * @param reqWidth Width of output image.
-     * @param reqHeight Height of output image.
-     *
-     * @return A bitmap of the resampled image.
-     */
-    public Bitmap decodeSampledBitmapFromResource(int resID, int reqWidth, int reqHeight) {
+	/**
+	 * Resamples a resource image to avoid OOM errors.
+	 *
+	 * @param resID Resource ID of the image to be downsampled.
+	 * @param reqWidth Width of output image.
+	 * @param reqHeight Height of output image.
+	 *
+	 * @return A bitmap of the resampled image.
+	 */
+	public Bitmap decodeSampledBitmapFromResource(int resID, int reqWidth, int reqHeight) {
 
-	    final BitmapFactory.Options options = new BitmapFactory.Options();
-	    options.inJustDecodeBounds = true;
-	    options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
-	    options.inJustDecodeBounds = false;
-	    options.inPurgeable = true;
+		final BitmapFactory.Options options = new BitmapFactory.Options();
+		options.inJustDecodeBounds = true;
+		options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+		options.inJustDecodeBounds = false;
+		options.inPurgeable = true;
 
-	    return BitmapFactory.decodeResource(mContext.getResources(), resID, options);
-    }
+		return BitmapFactory.decodeResource(mContext.getResources(), resID, options);
+	}
 
-    /**
-     * Resamples the specified input image file to avoid OOM errors.
-     *
-     * @param inputFile Input file to be downsampled
-     * @param reqWidth Width of the output file.
-     * @param reqHeight Height of the output file.
-     * @return The downsampled bitmap.
-     */
-    public Bitmap decodeSampledBitmapFromFile(File inputFile, int reqWidth, int reqHeight) {
+	/**
+	 * Resamples the specified input image file to avoid OOM errors.
+	 *
+	 * @param inputFile Input file to be downsampled
+	 * @param reqWidth Width of the output file.
+	 * @param reqHeight Height of the output file.
+	 * @return The downsampled bitmap.
+	 */
+	public Bitmap decodeSampledBitmapFromFile(File inputFile, int reqWidth, int reqHeight) {
 
-    	InputStream is = null;
-        try {
+		InputStream is = null;
+		try {
 
-        	try {
+			try {
 				is = new FileInputStream(inputFile);
 			} catch (Exception e) {
 				//Return a null bitmap if there's an error reading the file.
 				return null;
 			}
 
-            final BitmapFactory.Options options = new BitmapFactory.Options();
-            options.inJustDecodeBounds = true;
-            BitmapFactory.decodeStream(is, null, options);
+			final BitmapFactory.Options options = new BitmapFactory.Options();
+			options.inJustDecodeBounds = true;
+			BitmapFactory.decodeStream(is, null, options);
 
-            options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
-            options.inJustDecodeBounds = false;
-            options.inPurgeable = true;
+			options.inSampleSize = calculateInSampleSize(options, reqWidth, reqHeight);
+			options.inJustDecodeBounds = false;
+			options.inPurgeable = true;
 
-            try {
+			try {
 				is = new FileInputStream(inputFile);
 			} catch (FileNotFoundException e) {
 				//Return a null bitmap if there's an error reading the file.
 				return null;
 			}
 
-            return BitmapFactory.decodeStream(is, null, options);
-        } finally {
-            try {
-            	if (is!=null) {
-            		is.close();
-            	}
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
+			return BitmapFactory.decodeStream(is, null, options);
+		} finally {
+			try {
+				if (is!=null) {
+					is.close();
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
 
-        }
+		}
 
-    }
-
-    /**
-     * Calculates the sample size for the resampling process.
-     *
-     * @param options
-     * @param reqWidth
-     * @param reqHeight
-     * @return The sample size.
-     */
-	private static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
-	    final int height = options.outHeight;
-	    final int width = options.outWidth;
-	    int inSampleSize = 1;
-
-	    if (height > reqHeight || width > reqWidth) {
-	        if (width > height) {
-	            inSampleSize = Math.round((float) height / (float) reqHeight);
-	        } else {
-	            inSampleSize = Math.round((float) width / (float) reqWidth);
-	        }
-	    }
-
-	    return inSampleSize;
 	}
 
-    /**
-     * Calculates the sample size for the resampling process.
+	/**
+	 * Calculates the sample size for the resampling process.
 	 *
-     * @return The sample size.
-     */
-    public int calculateSampleSize(int width, int height, int targetWidth, int targetHeight) {
-        float bitmapWidth = width;
-        float bitmapHeight = height;
+	 * @param options
+	 * @param reqWidth
+	 * @param reqHeight
+	 * @return The sample size.
+	 */
+	private static int calculateInSampleSize(BitmapFactory.Options options, int reqWidth, int reqHeight) {
+		final int height = options.outHeight;
+		final int width = options.outWidth;
+		int inSampleSize = 1;
 
-        int bitmapResolution = (int) (bitmapWidth * bitmapHeight);
-        int targetResolution = targetWidth * targetHeight;
+		if (height > reqHeight || width > reqWidth) {
+			if (width > height) {
+				inSampleSize = Math.round((float) height / (float) reqHeight);
+			} else {
+				inSampleSize = Math.round((float) width / (float) reqWidth);
+			}
+		}
 
-        int sampleSize = 1;
+		return inSampleSize;
+	}
 
-        if (targetResolution == 0) {
-            return sampleSize;
-        }
+	/**
+	 * Calculates the sample size for the resampling process.
+	 *
+	 * @return The sample size.
+	 */
+	public int calculateSampleSize(int width, int height, int targetWidth, int targetHeight) {
+		float bitmapWidth = width;
+		float bitmapHeight = height;
 
-        for (int i = 1; (bitmapResolution / i) > targetResolution; i *= 2) {
-            sampleSize = i;
-        }
+		int bitmapResolution = (int) (bitmapWidth * bitmapHeight);
+		int targetResolution = targetWidth * targetHeight;
 
-        return sampleSize;
-    }
+		int sampleSize = 1;
 
-    /**
-     *
-     * @param url
-     * @param sampleSize
-     * @return
-     * @throws FileNotFoundException
-     * @throws IOException
-     */
-    public Bitmap downsampleBitmap(URL url, int sampleSize) throws FileNotFoundException, IOException {
-        Bitmap resizedBitmap;
-        BitmapFactory.Options outBitmap = new BitmapFactory.Options();
-        outBitmap.inJustDecodeBounds = false; // the decoder will return a bitmap
-        outBitmap.inSampleSize = sampleSize;
+		if (targetResolution == 0) {
+			return sampleSize;
+		}
 
-        InputStream is = url.openStream();
-        resizedBitmap = BitmapFactory.decodeStream(is, null, outBitmap);
-        is.close();
+		for (int i = 1; (bitmapResolution / i) > targetResolution; i *= 2) {
+			sampleSize = i;
+		}
 
-        return resizedBitmap;
-    }
+		return sampleSize;
+	}
 
-    /*
+	/**
+	 *
+	 * @param url
+	 * @param sampleSize
+	 * @return
+	 * @throws FileNotFoundException
+	 * @throws IOException
+	 */
+	public Bitmap downsampleBitmap(URL url, int sampleSize) throws FileNotFoundException, IOException {
+		Bitmap resizedBitmap;
+		BitmapFactory.Options outBitmap = new BitmapFactory.Options();
+		outBitmap.inJustDecodeBounds = false; // the decoder will return a bitmap
+		outBitmap.inSampleSize = sampleSize;
+
+		InputStream is = url.openStream();
+		resizedBitmap = BitmapFactory.decodeStream(is, null, outBitmap);
+		is.close();
+
+		return resizedBitmap;
+	}
+
+	/*
      * Returns the status bar height for the current layout configuration.
      */
-    public static int getStatusBarHeight(Context context) {
-    	int result = 0;
-    	int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
-    	if (resourceId > 0) {
-    		result = context.getResources().getDimensionPixelSize(resourceId);
-    	}
+	public static int getStatusBarHeight(Context context) {
+		int result = 0;
+		int resourceId = context.getResources().getIdentifier("status_bar_height", "dimen", "android");
+		if (resourceId > 0) {
+			result = context.getResources().getDimensionPixelSize(resourceId);
+		}
 
-    	return result;
-    }
+		return result;
+	}
 
-    /*
+	/*
      * Returns the navigation bar height for the current layout configuration.
      */
-    public static int getNavigationBarHeight(Context context) {
-        Resources resources = context.getResources();
-        int resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android");
-        if (resourceId > 0) {
-            return resources.getDimensionPixelSize(resourceId);
-        }
+	public static int getNavigationBarHeight(Context context) {
+		Resources resources = context.getResources();
+		int resourceId = resources.getIdentifier("navigation_bar_height", "dimen", "android");
+		if (resourceId > 0) {
+			return resources.getDimensionPixelSize(resourceId);
+		}
 
-        return 0;
-    }
+		return 0;
+	}
 
-    /**
-     * Returns the view container for the ActionBar.
-     * @return
-     */
-    public View getActionBarView(Activity activity) {
-        Window window = activity.getWindow();
-        View view = window.getDecorView();
-        int resId = getResources().getIdentifier("action_bar_container", "id", "android");
+	/**
+	 * Returns the view container for the ActionBar.
+	 * @return
+	 */
+	public View getActionBarView(Activity activity) {
+		Window window = activity.getWindow();
+		View view = window.getDecorView();
+		int resId = getResources().getIdentifier("action_bar_container", "id", "android");
 
-        return view.findViewById(resId);
-    }
+		return view.findViewById(resId);
+	}
 
-    /**
-     * Converts dp unit to equivalent pixels, depending on device density.
-     *
-     * @param dp A value in dp (density independent pixels) unit. Which we need to convert into pixels
-     * @param context Context to get resources and device specific display metrics
-     * @return A float value to represent px equivalent to dp depending on device density
-     */
-    public float convertDpToPixels(float dp, Context context){
-        Resources resources = context.getResources();
-        DisplayMetrics metrics = resources.getDisplayMetrics();
-        float px = dp * (metrics.densityDpi / 160f);
-        return px;
-    }
+	/**
+	 * Converts dp unit to equivalent pixels, depending on device density.
+	 *
+	 * @param dp A value in dp (density independent pixels) unit. Which we need to convert into pixels
+	 * @param context Context to get resources and device specific display metrics
+	 * @return A float value to represent px equivalent to dp depending on device density
+	 */
+	public float convertDpToPixels(float dp, Context context){
+		Resources resources = context.getResources();
+		DisplayMetrics metrics = resources.getDisplayMetrics();
+		float px = dp * (metrics.densityDpi / 160f);
+		return px;
+	}
 
-    /**
-     * Converts device specific pixels to density independent pixels.
-     *
-     * @param px A value in px (pixels) unit. Which we need to convert into db
-     * @param context Context to get resources and device specific display metrics
-     * @return A float value to represent dp equivalent to px value
-     */
-    public float convertPixelsToDp(float px, Context context){
-        Resources resources = context.getResources();
-        DisplayMetrics metrics = resources.getDisplayMetrics();
-        float dp = px / (metrics.densityDpi / 160f);
-        return dp;
-    }
+	/**
+	 * Converts device specific pixels to density independent pixels.
+	 *
+	 * @param px A value in px (pixels) unit. Which we need to convert into db
+	 * @param context Context to get resources and device specific display metrics
+	 * @return A float value to represent dp equivalent to px value
+	 */
+	public float convertPixelsToDp(float px, Context context){
+		Resources resources = context.getResources();
+		DisplayMetrics metrics = resources.getDisplayMetrics();
+		float dp = px / (metrics.densityDpi / 160f);
+		return dp;
+	}
 
-    /**
-     * Returns the orientation of the device.
-     */
-    public int getOrientation() {
-        if (getResources().getDisplayMetrics().widthPixels >
-            getResources().getDisplayMetrics().heightPixels) {
-            return ORIENTATION_LANDSCAPE;
-        } else {
-            return ORIENTATION_PORTRAIT;
-        }
+	/**
+	 * Returns the orientation of the device.
+	 */
+	public int getOrientation() {
+		if (getResources().getDisplayMetrics().widthPixels >
+				getResources().getDisplayMetrics().heightPixels) {
+			return ORIENTATION_LANDSCAPE;
+		} else {
+			return ORIENTATION_PORTRAIT;
+		}
 
-    }
+	}
 
-    public boolean isShuffleOn() {
-        return getSharedPreferences().getBoolean(SHUFFLE_ON, false);
-    }
+	public boolean isShuffleOn() {
+		return getSharedPreferences().getBoolean(SHUFFLE_ON, false);
+	}
 
-    /**
-     * Converts milliseconds to hh:mm:ss format.
-     */
-    public String convertMillisToMinsSecs(long milliseconds) {
+	/**
+	 * Converts milliseconds to hh:mm:ss format.
+	 */
+	public String convertMillisToMinsSecs(long milliseconds) {
 
-        int secondsValue = (int) (milliseconds / 1000) % 60 ;
-        int minutesValue = (int) ((milliseconds / (1000*60)) % 60);
-        int hoursValue  = (int) ((milliseconds / (1000*60*60)) % 24);
+		int secondsValue = (int) (milliseconds / 1000) % 60 ;
+		int minutesValue = (int) ((milliseconds / (1000*60)) % 60);
+		int hoursValue  = (int) ((milliseconds / (1000*60*60)) % 24);
 
-        String seconds = "";
-        String minutes = "";
-        String hours = "";
+		String seconds = "";
+		String minutes = "";
+		String hours = "";
 
-        if (secondsValue < 10) {
-            seconds = "0" + secondsValue;
-        } else {
-            seconds = "" + secondsValue;
-        }
+		if (secondsValue < 10) {
+			seconds = "0" + secondsValue;
+		} else {
+			seconds = "" + secondsValue;
+		}
 
-        if (minutesValue < 10) {
-            minutes = "0" + minutesValue;
-        } else {
-            minutes = "" + minutesValue;
-        }
+		if (minutesValue < 10) {
+			minutes = "0" + minutesValue;
+		} else {
+			minutes = "" + minutesValue;
+		}
 
-        if (hoursValue < 10) {
-            hours = "0" + hoursValue;
-        } else {
-            hours = "" + hoursValue;
-        }
+		if (hoursValue < 10) {
+			hours = "0" + hoursValue;
+		} else {
+			hours = "" + hoursValue;
+		}
 
-        String output = "";
-        if (hoursValue!=0) {
-            output = hours + ":" + minutes + ":" + seconds;
-        } else {
-            output = minutes + ":" + seconds;
-        }
+		String output = "";
+		if (hoursValue!=0) {
+			output = hours + ":" + minutes + ":" + seconds;
+		} else {
+			output = minutes + ":" + seconds;
+		}
 
-        return output;
-    }
-    
+		return output;
+	}
+
     /*
      * Getter methods.
      */
-    
-    public DBAccessHelper getDBAccessHelper() {
-    	return DBAccessHelper.getInstance(mContext);
-    }
-    
-    public SharedPreferences getSharedPreferences() {
-    	return mSharedPreferences;
-    }
-	
+
+	public DBAccessHelper getDBAccessHelper() {
+		return DBAccessHelper.getInstance(mContext);
+	}
+
+	public SharedPreferences getSharedPreferences() {
+		return mSharedPreferences;
+	}
+
 	public boolean isBuildingLibrary() {
 		return mIsBuildingLibrary;
 	}
-	
+
 	public boolean isScanFinished() {
 		return mIsScanFinished;
 	}
 
-    public int getCurrentTheme() {
-        return getSharedPreferences().getInt(CURRENT_THEME, DARK_THEME);
-    }
-    
-    public boolean isServiceRunning() {
-    	return mIsServiceRunning;
-    }
-    
-    public boolean isEqualizerEnabled() {
-    	return getSharedPreferences().getBoolean("EQUALIZER_ENABLED", true);
-    }
-    
-    public boolean isCrossfadeEnabled() {
-    	return getSharedPreferences().getBoolean(CROSSFADE_ENABLED, false);
-    }
+	public int getCurrentTheme() {
+		return getSharedPreferences().getInt(CURRENT_THEME, DARK_THEME);
+	}
 
-    public int getCrossfadeDuration() {
-        return getSharedPreferences().getInt(CROSSFADE_DURATION, 50);
-    }
+	public boolean isServiceRunning() {
+		return mIsServiceRunning;
+	}
+
+	public boolean isEqualizerEnabled() {
+		return getSharedPreferences().getBoolean("EQUALIZER_ENABLED", true);
+	}
+
+	public boolean isCrossfadeEnabled() {
+		return getSharedPreferences().getBoolean(CROSSFADE_ENABLED, false);
+	}
+
+	public int getCrossfadeDuration() {
+		return getSharedPreferences().getInt(CROSSFADE_DURATION, 50);
+	}
 
 
 
-    public int getCurrentLibraryIndex() {
-        return getSharedPreferences().getInt(CURRENT_LIBRARY_POSITION, 0);
-    }
+	public int getCurrentLibraryIndex() {
+		return getSharedPreferences().getInt(CURRENT_LIBRARY_POSITION, 0);
+	}
 
 	/*
 	 * Setter methods.
 	 */
-	
+
 	public void setIsBuildingLibrary(boolean isBuildingLibrary) {
 		mIsBuildingLibrary = isBuildingLibrary;
 	}
-	
+
 	public void setIsScanFinished(boolean isScanFinished) {
 		mIsScanFinished = isScanFinished;
 	}
-	
+
 	public void setIsServiceRunning(boolean running) {
 		mIsServiceRunning = running;
 	}
-	
 
-	
+
+
 }
