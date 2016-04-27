@@ -26,12 +26,56 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".ui.activities.NowPlayingActivity"
+            android:exported="true"
+            android:label="@string/now_playing"
+            android:launchMode="singleTask" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:host="media" />
+                <data android:mimeType="audio/*" />
+                <data android:mimeType="application/ogg" />
+                <data android:mimeType="application/x-ogg" />
+                <data android:mimeType="application/itunes" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".ui.activities.MainActivity"
             android:theme="@style/CustomDrawerTheme"/>
 
         <service
             android:name=".services.BuildMusicLibraryService"
             android:exported="false" />
+
+        <service android:name=".services.AudioPlaybackService" />
+
+        <!-- Listens for media playback buttons (headphone buttons, bluetooth buttons, etc.) -->
+
+        <receiver android:name=".receivers.HeadsetButtonsReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.MEDIA_BUTTON" />
+            </intent-filter>
+        </receiver>
+
+
+        <!-- KitKat Fix Activity -->
+
+        <activity
+            android:name=".services.KitKatFixActivity"
+            android:allowTaskReparenting="true"
+            android:alwaysRetainTaskState="false"
+            android:clearTaskOnLaunch="true"
+            android:enabled="true"
+            android:excludeFromRecents="true"
+            android:finishOnTaskLaunch="true"
+            android:noHistory="true"
+            android:stateNotNeeded="true"
+            android:theme="@android:style/Theme.NoDisplay" />
 
     </application>
 

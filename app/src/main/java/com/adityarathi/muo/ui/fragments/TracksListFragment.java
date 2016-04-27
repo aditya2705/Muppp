@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 
 import com.adityarathi.muo.R;
 import com.adityarathi.muo.ui.adapters.SongsAdapter;
+import com.adityarathi.muo.ui.interfaces.RecyclerItemClickListener;
 import com.adityarathi.muo.ui.objects.Song;
 import com.adityarathi.muo.utils.Common;
 
@@ -41,6 +42,8 @@ public class TracksListFragment extends Fragment {
 
     private ArrayList<Song> songList = new ArrayList<>();
     private Common mApp;
+
+    private String mQuerySelection = "";
 
 
 
@@ -116,6 +119,18 @@ public class TracksListFragment extends Fragment {
 
 
         recyclerView.setAdapter(new SongsAdapter(getActivity(),songList));
+        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(getActivity(), new RecyclerItemClickListener.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                mApp.getPlaybackKickstarter()
+                        .initPlayback(getActivity(),
+                                mQuerySelection,
+                                Common.PLAY_ALL_SONGS,
+                                position,
+                                true,
+                                false);
+            }
+        }));
 
     }
 
